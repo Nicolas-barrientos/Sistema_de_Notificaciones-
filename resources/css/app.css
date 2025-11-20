@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Animación personalizada de pulso único */
+@keyframes pulse-once {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.animate-pulse-once {
+    animation: pulse-once 0.6s ease-in-out;
+}
+
+/* Transición suave para el contador */
+#contadorNotificaciones {
+    transition: all 0.3s ease;
+    display: inline-block;
+}
